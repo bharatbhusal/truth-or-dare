@@ -66,7 +66,8 @@ input {
   box-sizing: border-box;
 }
 
-.spin-button {
+.spin-button,
+.save-button {
   background-color: #4caf50;
   color: #fff;
   padding: 10px 20px;
@@ -86,7 +87,7 @@ input {
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
-  color: #745353;
+  color: #df3e3e;
 }
 
 .popup {

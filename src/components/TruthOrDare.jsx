@@ -92,7 +92,7 @@ const TruthOrDare = () => {
             {numberOfPlayers && (
                 <div className="game-details">
                     {playerNames.map((name, index) => (
-                        <div key={index}>
+                        <div className="names-box" key={index}>
                             Player {index + 1}:
                             {editingNames ? (
                                 <input
@@ -102,11 +102,12 @@ const TruthOrDare = () => {
                                     onChange={(e) => handlePlayerNameChange(index, e)}
                                 />
                             ) : (
-                                <div>{name}</div>
+                                <div className='name'>{name}</div>
                             )}
                         </div>
                     ))}
                     {editingNames && (
+
                         <button onClick={handleSaveClick} className="save-button">
                             Save
                         </button>
