@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/truth-or-dare/static/css/main.10639d20.css",
+    "main.js": "/truth-or-dare/static/js/main.eb5a1b9f.js",
+    "index.html": "/truth-or-dare/index.html",
+    "main.10639d20.css.map": "/truth-or-dare/static/css/main.10639d20.css.map",
+    "main.eb5a1b9f.js.map": "/truth-or-dare/static/js/main.eb5a1b9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10639d20.css",
+    "static/js/main.eb5a1b9f.js"
+  ]
+}
