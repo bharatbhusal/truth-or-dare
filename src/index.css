@@ -15,15 +15,7 @@
 /* Root level CSS variables for easy theming */
 :root {
   --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
-  --transition: all 400ms ease;
 }
 /* HTML and body styles */
 html {
@@ -41,53 +33,39 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
+  height: 100vh;
   background-size: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container {
+  padding: 0.8rem;
+  border: 2px solid var(--color-white);
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.truth-or-dare-container {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  box-sizing: border-box;
-}
-
-.spin-button,
-.save-button {
+button {
   background-color: #4caf50;
   color: #fff;
+  width: 6rem;
+  height: 6rem;
   padding: 10px 20px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  border-radius: 1rem;
 }
 
-.spin-button:disabled {
+button:disabled {
   background-color: #ddd;
   cursor: not-allowed;
-}
-
-.player-turn {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #df3e3e;
 }
 
 .popup {
@@ -109,14 +87,4 @@ input {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: center;
-}
-
-.popup button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: #4caf50;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
