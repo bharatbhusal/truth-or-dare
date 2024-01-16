@@ -40,6 +40,7 @@ body {
   align-items: center;
 }
 .container {
+  margin: 2rem;
   padding: 0.8rem;
   border: 2px solid var(--color-white);
   border-radius: 1.5rem;
@@ -82,10 +83,17 @@ button:disabled {
 }
 
 .popup-content {
-  background: #fff;
+  background: #fff8;
   padding: 20px;
+  /* width: 80%; */
   color: #000;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: center;
+  backdrop-filter: blur(50px);
+}
+
+.popup-content button {
+  margin-top: 1rem;
+  height: max-content;
 }
