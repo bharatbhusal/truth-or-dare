@@ -43,11 +43,14 @@ body {
   margin: 2rem;
   padding: 0.8rem;
   border: 2px solid var(--color-white);
+  width: max-content;
   border-radius: 1.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #000;
   gap: 1rem;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Adjust the color and intensity as needed */
 }
