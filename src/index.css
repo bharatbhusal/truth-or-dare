@@ -39,6 +39,17 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 90vh; */
+}
+footer {
+  position: absolute;
+  top: 90%;
+}
 .container {
   margin: 2rem;
   padding: 0.8rem;
@@ -52,7 +63,7 @@ body {
   flex-wrap: wrap;
   background-color: #000;
   gap: 1rem;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Adjust the color and intensity as needed */
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
 }
 
 button {

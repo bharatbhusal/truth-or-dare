@@ -62,24 +62,28 @@ const App = () => {
     };
 
     return (
-        <div className='container' >
-            <button onClick={handleTruthClick} disabled={loading} className="spin-button">
-                Truth
-            </button>
-            <button onClick={handleDareClick} disabled={loading} className="spin-button">
-                Dare
-            </button>
-            <button onClick={handleNHIEClick} disabled={loading} className="spin-button">
-                Never Have I Ever
-            </button>
-            <button onClick={handleParanoiaClick} disabled={loading} className="spin-button">
-                Paranoia
-            </button>
-            <button onClick={handleWYRClick} disabled={loading} className="spin-button">
-                Would You Rather
-            </button>
+        <div className='app'>
 
-            {popupMessage && <Popup message={popupMessage} onClose={closePopup} />}
+            <div className='container' >
+                <button onClick={handleTruthClick} disabled={loading} className="spin-button">
+                    Truth
+                </button>
+                <button onClick={handleDareClick} disabled={loading} className="spin-button">
+                    Dare
+                </button>
+                <button onClick={handleNHIEClick} disabled={loading} className="spin-button">
+                    Never Have I Ever
+                </button>
+                <button onClick={handleParanoiaClick} disabled={loading} className="spin-button">
+                    Paranoia
+                </button>
+                <button onClick={handleWYRClick} disabled={loading} className="spin-button">
+                    Would You Rather
+                </button>
+
+                {popupMessage && <Popup message={popupMessage} onClose={closePopup} />}
+            </div>
+            <footer>Created by Mr.Bharat Bhusal</footer>
         </div>
     );
 };
