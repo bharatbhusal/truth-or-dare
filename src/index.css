@@ -3,111 +3,106 @@
 
 /* Resetting default styles for all elements */
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
 }
 
 /* Root level CSS variables for easy theming */
 :root {
-  --color-bg: #1f1f38;
-  --color-white: #fff;
+	--color-bg: #1f1f38;
+	--color-white: #fff;
 }
 /* HTML and body styles */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /* Removing scrollbar */
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 /* Body styles */
 body {
-  font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
-  color: var(--color-white);
-  line-height: 1.7;
-  height: 100vh;
-  background-size: 3%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	font-family: "Poppins", sans-serif;
+	background: var(--color-bg);
+	color: var(--color-white);
+	line-height: 1.7;
+	height: 100vh;
+	background-size: 3%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 .app {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  /* height: 90vh; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
-footer {
-  position: absolute;
-  top: 90%;
-}
+
 .container {
-  margin: 2rem;
-  padding: 0.8rem;
-  border: 2px solid var(--color-white);
-  width: max-content;
-  border-radius: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #000;
-  gap: 1rem;
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+	margin: 2rem;
+	padding: 0.8rem;
+	border: 2px solid var(--color-white);
+	width: max-content;
+	border-radius: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #000;
+	gap: 1rem;
+	box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
 }
 
 button {
-  background-color: #4caf50;
-  color: #fff;
-  width: 6rem;
-  height: 6rem;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  border-radius: 1rem;
+	background-color: #4caf50;
+	color: #fff;
+	width: 6rem;
+	height: 6rem;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	border-radius: 1rem;
 }
 
 button:disabled {
-  background-color: #ddd;
-  cursor: not-allowed;
+	background-color: #ddd;
+	cursor: not-allowed;
 }
 
 .popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .popup-content {
-  background: #fff8;
-  padding: 20px;
-  /* width: 80%; */
-  color: #000;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  backdrop-filter: blur(50px);
+	background: #fff8;
+	padding: 20px;
+	color: #000;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	backdrop-filter: blur(50px);
 }
 
 .popup-content button {
-  margin-top: 1rem;
-  height: max-content;
+	margin-top: 1rem;
+	height: max-content;
 }

@@ -83,7 +83,6 @@ const App = () => {
 
                 {popupMessage && <Popup message={popupMessage} onClose={closePopup} />}
             </div>
-            <footer>Created by Mr.Bharat Bhusal</footer>
         </div>
     );
 };
